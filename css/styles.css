@@ -50,9 +50,10 @@ header h2 {
 }
 
 
-.modal-header {
-    margin: 0px;
-    padding: 30px;
-    border-top: 0;
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom:0;
+    z-index: 100;
 }
 
