@@ -5,12 +5,13 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+<!-- build:css css/main.css -->
 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
 <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
 <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
 <link rel="stylesheet" href="css/styles.css" />
+<!-- endbuild -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
 
 <title>NuCamp: A Better Way To Camp</title>
 </head>
@@ -26,9 +27,10 @@
                 <div class='col'>
                   <h1>NuCamp</h1>
                   <h2>a better way to camp</h2>
-                </div>           
-                  <div class='col-md-4 col-xl-2 col-mt-4'> 
-                  <button type='button' class='btn btn-lg btn-info text-nowrap-white' data-toggle='modal' data-target='#reserveModal'>Reserve a Campsite</button>
+                </div>
+                       <!--task 1 removed data-* attibutes   replaced with id='reserveButton'-->     
+                <div class='col-md-4 col-xl-2 col-mt-4'>                     
+                  <button type='button' class='btn btn-lg btn-info text-nowrap-white' id='reserveButton'>Reserve a Campsite</button>
                 </div>
             </div>   
         </div>
@@ -36,7 +38,7 @@
     <div id='reserveModal' class='modal fade' role='dialog'>
         <div class='modal-dialog modal-lg' role='document'>
             <div class='modal-content'>
-                <div class='modal-header bg-info text-white'>
+                <div class='modal-header modal-header1 '>
                     <h3 class='modal-title'>Reserve a Campsite</h3> 
                     <button type='button' class='close' data-dismiss='modal'>&times;</button>
                 </div>
@@ -81,17 +83,17 @@
                                         </div>
                                     </div>
                                 
-                            </div>
+                     </div>
                             <div class='row'>                               
                                 <div class='col'>
                                       <button type='submit' data-dismiss='modal' class='btn btn-secondary'>cancel</button>
                                         <button type='submit' class='btn btn-primary'>Search</button>
-                                    </div>
-                                </div>    
-                            </div>                             
-                     </div>
-                </div> 
+                                </div>
+                            </div>    
+                </div>                             
             </div>
+        </div> 
+    </div>
         
                  
 
@@ -108,18 +110,21 @@
                     <li class='nav-item'><a class='nav-link' href='#'><i class='fa fa-list fa-lg'></i>Sites</a></li>
                     <li class='nav-item'><a class='nav-link' href='contactus.html'><i class='fa fa-address-card fa-lg'></i>Contact</a></li>
                 </ul>
+           <!--task 1 part 2 removed datd attributes   replaced with id='loginButton'-->  
+                  <div>
                     <span class='navbar-text ml-auto'>
-                        <a role='button' data-toggle='modal' data-target='#loginModal'>
+                        <a role='button' id='loginButton'>
                             <i class='fa fa-sign-in'></i> Login
-                        </a>    
+                        </a>                         
                     </span>
+                   </div>
                 </div>     
         </div>
     </nav>
     <div id='loginModal' class='modal fade' role='dialog'>
         <div class='modal-dialog' role='document'>
             <div class='modal-content'>
-                <div class='modal-header bg-info text-white'>
+                <div class='modal-header loginheader'>
                     <h3 class='modal-title'>Login</h3> 
                     <button type='button' class='close' data-dismiss='modal'>&times;</button>
                 </div>
@@ -274,12 +279,12 @@
                 </div>
             </footer>
             <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+            <!-- build:js js/main.js -->
             <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
             <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
             <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-            
             <script src='js/scripts.js'></script>
-          
+            <!-- endbuild -->
         
         </body>
 
@@ -369,4 +374,15 @@
               });
         </script> --> 
         
+      <!--  <div class='col-md-4 col-xl-2 col-mt-4'> 
+            <button type='button' class='btn btn-lg btn-info text-nowrap-white' data-toggle='modal' data-target='#reserveModal'>Reserve a Campsite</button>
+          </div>-->
+          
+       <!-- <span class='navbar-text ml-auto'>
+            <a role='button' data-toggle='modal' data-target='#loginModal'>
+                <i class='fa fa-sign-in'></i> Login
+            </a>    
+        </span> -->
         
+        
+     

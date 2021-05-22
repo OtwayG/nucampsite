@@ -12,3 +12,25 @@ $(function() {
         }
     });
   });
+
+$(function() {
+    $('#reserveButton').click(function() {
+        $('#reserveModal').modal('show'); 
+        $('.modal-header').css('color', 'white');   
+    });
+});
+     
+
+$(function() {
+    $('#loginButton').click(function() {
+        $('#loginModal').modal('show');    
+    });
+});
+
+
+
+
+
+ //$('#loginButton').modal('show')
+
+ // $('#myModal').modal('hide')

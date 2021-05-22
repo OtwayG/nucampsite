@@ -44,3 +44,9 @@ header h2 {
   right: 0;
   bottom: 0;
   z-index: 100; }
+
+.modal-header1 {
+  background-color: #17A2BB; }
+
+.loginheader {
+  background-color: #901CAD; }
